@@ -1,0 +1,180 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+div.nonFixed {
+    position: relative;
+    top: 80px;
+}
+
+/* NavBar Start */
+
+nav {
+    background-color: maroon;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
+
+img.logo {
+    width: 70px;
+    margin: 5px 70px;
+}
+
+ul.navs {
+    display: flex;
+    list-style-type: none;
+    float: right;
+    margin: 0 70px 0 0;
+}
+
+li.nav {
+    color: white;
+    margin: 20px;
+    line-height: 40px;
+}
+
+/* NavBar Complete */
+
+/* Slider and Cart Start (on scroll cart ko nav k under krdena hai)*/
+
+div.Sli_Cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+div.sliding {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 0 10px;
+    background-color: rgb(134, 27, 27);
+    width: 90%;
+    height: 50px;
+}
+
+div.cart {
+    border: 2px rgb(134, 27, 27) solid;
+    border-top: none;
+    background-color: white;
+    float: right;
+    height: 60px;
+    width: 10%;
+    margin-right: 10px;
+    display: flex;
+}
+
+/* Slider and Cart Finish (Cart Styling Balance) */
+
+/*  BigSlider Start  */
+
+div.carousel-inner {
+    height: 55vh;
+    overflow: hidden;
+}
+
+/*  BigSlider Close  */
+
+/* Latest Semi Fancy Set Start */
+
+div.fancy_text {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 80px 0 50px 0;
+}
+
+hr.fancys_line {
+    color: maroon;
+    border: 3px solid maroon;
+    opacity: 1;
+    border-radius: 5px;
+    width: 25%;
+}
+
+h2.fancy_head {
+    font-weight: bold;
+    color: maroon;
+}
+
+div.set {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.fancy_set {
+    border: maroon 1px solid;
+    height: 400px;
+    width: 25vw;
+    position: relative;
+}
+
+img.fancy_image {
+    width: 100%;
+}
+
+div.cart_sec {
+    background-color: maroon;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    z-index: 1;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+i.fa-cart-plus {
+    color: white;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+div.cart_sec>p {
+    margin: 10px 0 10px 30px;
+    font-size: 20px;
+}
+
+/* Latest Semi Fancy Set Finish */
+
+/* Seperator Start */
+
+img.logo2 {
+    width: 60px;
+    height: 60px;
+    background-color: maroon;
+    border-radius: 20px;
+}
+
+/* Seperator Finish */
+
+/* Top Sell prints Start */
+
+div.top_sell {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2.top_sell {
+    color: maroon;
+}
+
+div.top_images {
+    width: 98vw;
+    height: 500px;
+    opacity: 0.25;
+    background: url(./Images/wool-plaid-white-bedsheet.jpg);
+}
+
+}
+
+/* Top Sell prints finish */
