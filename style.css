@@ -171,10 +171,65 @@ h2.top_sell {
 div.top_images {
     width: 98vw;
     height: 500px;
-    opacity: 0.25;
+    /* opacity: 0.25; */
     background: url(./Images/wool-plaid-white-bedsheet.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+div.topImage {
+    border: maroon 1px solid;
+    width: 20vw;
+    height: 350px;
 }
 
 /* Top Sell prints finish */
+
+/* Product Display Starts */
+
+/* Product Display Finish */
+
+/* PRoduct With Span Text Start */
+
+div.textPro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 20px 200px;
+}
+
+span {
+    width: 400px;
+}
+
+img.textPro {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+div.textAlternative {
+    flex-direction: row-reverse;
+}
+
+span.text>p, span.text>h2 {
+    color: maroon;
+    margin: 20px;
+}
+
+div.line {
+    height: 1800px;
+    width: 5px;
+    background-color: maroon;
+    z-index: 1;
+    position: absolute;
+    right: 50%;
+    margin-top: 20px;
+
+}
+
+
+
+/* PRoduct With Span Text Finish */
