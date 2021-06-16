@@ -220,16 +220,35 @@ span.text>p, span.text>h2 {
 }
 
 div.line {
-    height: 1800px;
+    height: 1740px;
     width: 5px;
     background-color: maroon;
-    z-index: 1;
     position: absolute;
     right: 50%;
     margin-top: 20px;
-
+    border-radius: 30px;
 }
 
-
-
 /* PRoduct With Span Text Finish */
+
+/* Footer Starts */
+
+div.footer {
+    background-color: #E0E0E0;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+p.foot,h4.footHead{
+    color: maroon;
+}
+i{
+    color: maroon;
+}
+hr.red{
+    background-color: maroon;
+    height: 2px !important;
+    opacity: 1 !important;
+}
+/* Footer Finish */
