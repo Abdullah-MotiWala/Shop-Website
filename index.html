@@ -13,19 +13,21 @@
             <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         </head>
         
-        <body>
+        <body onscroll="addCart()">
             <!-- NavBar Start -->
             <div class="fixed">
-                <nav class="nav">
+                <nav class="nav" id="nav" >
                     <img src="./Images/Logo.png" alt="Shekahni Collection Logo"
                     class="logo">
-                    <ul class="navs">
+                    <div class="ul" id = "ul">
+                    <ul class="navs" id  = "navs">
                         <li class="nav-1 nav">Home</li>
                         <li class="nav-2 nav">Unstitch Prints</li>
                         <li class="nav-3 nav">Others</li>
                         <li class="nav-4 nav">Appointment</li>
                         <li class="nav-5 nav">Our Team</li>
                     </ul>
+                </div>
                 </nav>
             </div>
             <!-- NavBar Complete -->
@@ -34,19 +36,17 @@
             <div class="nonFixed">
                 <div class="Sli_Cart">
                     <div class="sliding">
-                        <marquee behavior="slide" direction="right">Sale
-                            is on</marquee>
-                        </div>
-                        
-                        <div class="cart">
-                            <i class="fa fa-shopping-cart fa-2x"></i>
-                            <select name="ValueMethod" id="ValueMethod" class="Payment
-                            Method">
-                            <option value="Pkr">Pkr</option>
-                            <option value="dollar">USD</option>
-                        </select>
+                        <marquee behavior="slide" direction="right">Sale is on</marquee>
                     </div>
-                </div>
+                        
+                        <div class="cart" id="cart">
+                            <i class="fa fa-shopping-cart fa-2x"></i>
+                            <select name="ValueMethod" id="ValueMethod" class="PaymentMethod">
+                            <option value="Pkr" selected= "select">Pkr</option>
+                            <option value="dollar">USd</option>
+                             </select>
+                         </div>
+                    </div>
                 <!--Slide and Cart Finish  -->
                 <!-- BigSlider Start -->
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">

@@ -13,3 +13,15 @@ var swiper = new Swiper('.swiper-container', {
       prevEl: '.swiper-button-prev',
     },
   });
+
+// Funciton For Div animation add
+function addCart(){
+  var nav = document.getElementById("ul");
+  var cartDiv =document.getElementById("cart");
+  nav.append(cartDiv)
+  cartDiv.style.marginRight= "20px";
+  cartDiv.style.borderRadius = "10px";
+  cartDiv.style.transition = "100s ease";
+  cartDiv.style.width = "130px";
+}
+// Funciton For Div animation end

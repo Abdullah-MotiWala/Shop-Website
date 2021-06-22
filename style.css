@@ -31,7 +31,7 @@ ul.navs {
     display: flex;
     list-style-type: none;
     float: right;
-    margin: 0 70px 0 0;
+    margin: 0 20px 0 0;
 }
 
 li.nav {
@@ -66,10 +66,19 @@ div.cart {
     background-color: white;
     float: right;
     height: 60px;
-    width: 10%;
+    width: 150px;
     margin-right: 10px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+option,select{
+    color: maroon;
+    border: none;
+    text-decoration: none;
+}
+div.ul{
+    display: flex;
     align-items: center;
 }
 #ValueMethod{
