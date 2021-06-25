@@ -38,6 +38,11 @@ li.nav {
     color: white;
     margin: 20px;
     line-height: 40px;
+    transition: transform 70ms ease;
+}
+li.nav:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
 }
 
 /* NavBar Complete */
@@ -77,6 +82,9 @@ option,select{
     border: none;
     text-decoration: none;
 }
+select:focus,option:focus{
+    outline: none;
+}
 div.ul{
     display: flex;
     align-items: center;
@@ -90,10 +98,25 @@ div.ul{
 /*  BigSlider Start  */
 
 div.carousel-inner {
-    height: 500px;
+    height: 600px;
     overflow: hidden;
 }
+div.bigSliderText{
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+}
+div.bigSliderText p{
+    color: maroon;
+}
 
+div.bigSliderText h2{
+    color: maroon;
+    font-weight: bold;
+
+}
 /*  BigSlider Close  */
 
 /* Latest Semi Fancy Set Start */
@@ -177,7 +200,7 @@ div.top_images {
 
 div.topImage {
     border: maroon 1px solid;
-    width: 20vw;
+    width: 300px;
     height: 350px;
 }
 
@@ -217,7 +240,7 @@ span.text>p, span.text>h2 {
 }
 
 div.line {
-    height: 1740px;
+    height: 2180px;
     width: 5px;
     background-color: maroon;
     position: absolute;
