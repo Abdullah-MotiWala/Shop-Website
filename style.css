@@ -40,7 +40,8 @@ li.nav {
     line-height: 40px;
     transition: transform 70ms ease;
 }
-li.nav:hover{
+
+li.nav:hover {
     cursor: pointer;
     transform: translateY(-2px);
 }
@@ -77,19 +78,24 @@ div.cart {
     justify-content: space-around;
     align-items: center;
 }
-option,select{
+
+option, select {
     color: maroon;
+    background-color: #fff;
     border: none;
     text-decoration: none;
 }
-select:focus,option:focus{
+
+select:focus, option:focus {
     outline: none;
 }
-div.ul{
+
+div.ul {
     display: flex;
     align-items: center;
 }
-#ValueMethod{
+
+#ValueMethod {
     height: 20px;
 }
 
@@ -101,72 +107,83 @@ div.carousel-inner {
     height: 600px;
     overflow: hidden;
 }
-div.bigSliderText{
+
+div.bigSliderText {
     width: 500px;
     padding: 40px;
     position: absolute;
     top: 250px;
     left: 50px;
 }
-div.bigSliderText p{
+
+div.bigSliderText p {
     color: maroon;
 }
 
-div.bigSliderText h2{
+div.bigSliderText h2 {
     color: maroon;
     font-weight: bold;
-
 }
+
 /*  BigSlider Close  */
 
 /* Latest Semi Fancy Set Start */
-h2.semiFancy{
+
+h2.semiFancy {
     color: maroon;
     font-weight: bold;
-   display: flex;
-   justify-content: center;
-   margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
+
 div.swiper-container {
     /* margin-top: 250px; */
     height: 600px;
 }
-div.swiper-wrapper{
+
+div.swiper-wrapper {
     display: flex;
     align-items: center;
     text-align: center;
 }
-div.swiper-slide{
-width: 300px;
-height: 300px;
-border-radius: 7px;
-}
-div.swiper-slide img{
+
+div.swiper-slide {
     width: 300px;
     height: 300px;
     border-radius: 7px;
 }
-.swiper-slide-active{
+
+div.swiper-slide img {
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+}
+
+.swiper-slide-active {
     transform: scale(1.5);
     border-radius: 10.5px;
     transition: .4s;
 }
+
 /* Latest Semi Fancy Set Finish */
 
 /* Seperator Start */
-hr.fancys_line{
+
+hr.fancys_line {
     height: 5px!important;
     width: 250px!important;
     opacity: 1!important;
     color: maroon;
     border-radius: 10px;
-
 }
-div.seperator{
+
+div.seperator {
     display: flex;
     justify-content: space-around;
-    margin:10px 200px;
+    margin: 10px 200px;
 }
+
 img.logo2 {
     width: 60px;
     height: 60px;
@@ -240,7 +257,8 @@ span.text>p, span.text>h2 {
 }
 
 div.line {
-    height: 2180px;
+    margin-bottom: 5px;
+    height: 48.5%;
     width: 5px;
     background-color: maroon;
     position: absolute;
@@ -274,8 +292,58 @@ hr.red {
     height: 2px !important;
     opacity: 1 !important;
 }
-div.custCare i{
+
+div.custCare i {
     margin: 5px;
 }
 
 /* Footer Finish */
+
+/* Media Query for index Page Start*/
+
+@media only screen and (max-width:1350px) {
+    span {
+        width: 350px;
+    }
+    img.textPro {
+        width: 350px;
+        height: 350px;
+    }
+    div.line {
+        height: 45.5%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    div.topImage {
+        width: 250px;
+        height: 300px;
+    }
+    span {
+        width: 300px;
+    }
+    img.textPro {
+        width: 300px;
+        height: 300px;
+    }
+    div.line {
+        height: 42%;
+    }
+    div.swipBtn{
+        display: none !important;
+    }
+}
+@media screen and (max-width:1096px){
+  div.swiper-slide img {
+    width: 250px;
+    height: 250px;
+    border-radius: 7px;
+}
+div.line {
+    display: none;
+}
+}
+@media screen and (max-width:992px){
+
+}
+/* Media Query for index Page End*/

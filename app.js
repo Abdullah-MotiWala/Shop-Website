@@ -1,7 +1,7 @@
 // Slider of Product Starts
 var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 3,
   spaceBetween: 40,
+  slidesPerView: 3,
   centeredSlides: true,
   // grabCursor: true,
   loop: true,
