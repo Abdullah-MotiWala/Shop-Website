@@ -103,8 +103,8 @@ div.ul {
 
 /*  BigSlider Start  */
 
-div.carousel-inner {
-    height: 600px;
+div.carousel-inner div img {
+    min-height: 600px;
     overflow: hidden;
 }
 
@@ -138,7 +138,6 @@ h2.semiFancy {
 }
 
 div.swiper-container {
-    /* margin-top: 250px; */
     height: 600px;
 }
 
@@ -329,21 +328,88 @@ div.custCare i {
     div.line {
         height: 42%;
     }
-    div.swipBtn{
+    div.swipBtn {
         display: none !important;
     }
+    div.carousel-inner {
+        height: 500px;
+        overflow: hidden;
+    }
 }
-@media screen and (max-width:1096px){
-  div.swiper-slide img {
-    width: 250px;
-    height: 250px;
-    border-radius: 7px;
-}
-div.line {
-    display: none;
-}
-}
-@media screen and (max-width:992px){
 
+@media screen and (max-width:1096px) {
+    div.swiper-slide img {
+        width: 250px;
+        height: 250px;
+        border-radius: 7px;
+    }
+    div.line {
+        display: none;
+    }
 }
+
+@media screen and (max-width:992px) {
+    div.topImage {
+        margin: 10px;
+        width: 210px;
+        height: 250px;
+    }
+    hr.fancys_line {
+        width: 150px !important;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    div.textPro span {
+        min-width: 300px;
+        min-height: 200px;
+        margin: auto 10px;
+        overflow: hidden;
+    }
+    ul.navs{
+        margin-right: 5px;
+        font-size: 13px;
+    }
+    nav img.logo {
+        width: 70px;
+        margin: 5px 5px;
+    }
+    div.cart{
+        height: 40px;
+        width: 100px;
+    }
+    div.swiper-slide img {
+        width: 200px;
+        height: 200px;
+        border-radius: 7px;
+    }
+    div.swiper-container {
+        height: 400px;
+        padding-top: 100px;
+    }
+    div.top_images {
+        width: 98vw;
+        height: 400px;
+    }
+    p.foot{
+        font-size: 14px;
+    }
+    h4.footHead{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:768px){
+    /* nav {
+        background-color: maroon;
+        display: inline-block;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100vw;
+        z-index: 10;
+    } */
+    ul.navs{
+        display: block;
+    }
+}
+
 /* Media Query for index Page End*/
