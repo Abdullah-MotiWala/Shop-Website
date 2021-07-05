@@ -12,11 +12,16 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
-<body onscroll="addCart()">
+<body >
     <!-- NavBar Start -->
     <div class="fixed">
         <nav class="nav" id="nav">
+            <div class="logoAndtoogleButton">
             <img src="./Images/Logo.png" alt="Shekahni Collection Logo" class="logo">
+            <div class="mediaQueryCart" id="mediaQueryCart">
+            <i class="fa fa-bars fa-3x" onclick="toggle()"></i>
+            </div>
+            </div>
             <div class="ul" id="ul">
                 <ul class="navs" id="navs">
                     <li class="nav-1 nav">Home</li>
