@@ -1,5 +1,5 @@
 // Funciton For cart animation add
-var windowSize = matchMedia("(max-width: 768px)")
+var windowSize768 = matchMedia("(max-width: 768px)")
 var divOfUl = document.getElementById("ul");
 var cartDiv = document.getElementById("cart");
 var cartToAddDiv = document.getElementById("mediaQueryCart");
@@ -16,7 +16,7 @@ function stylingDivInBigScreen() {
   cartDiv.style.width = "120px";
 }
 function placmementOfDiv() {
-  if (windowSize.matches) {
+  if (windowSize768.matches) {
     cartToAddDiv.append(cartDiv)
     stylingDivInSmallScreen()
   } else {
@@ -38,18 +38,21 @@ var ulMediaQuery = document.getElementById("navs");
 function toggle() {
   if (ulMediaQuery.style.left == "0%") {
     ulMediaQuery.style.left = "-100%";
-    console.log("As ")
   } else {
     ulMediaQuery.style.left = "0%"
-    console.log("Af")
   }
 }
 // Funciton For animated Navbar Finish
 
+if(windowSize768.matches){
+ var numberOfImages = 1;
+}else{
+  var numberOfImages = 3;
+}
 // Slider of Product Starts
 var swiper = new Swiper('.swiper-container', {
   spaceBetween: 40,
-  slidesPerView: 3,
+  slidesPerView: numberOfImages,
   centeredSlides: true,
   // grabCursor: true,
   loop: true,

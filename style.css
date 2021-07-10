@@ -88,7 +88,6 @@ option, select {
     background-color: transparent;
     border: none;
     text-decoration: none;
-
 }
 
 select:focus, option:focus {
@@ -210,7 +209,7 @@ h2.top_sell {
 }
 
 div.top_images {
-    width: 98vw;
+    width: 95vw;
     height: 500px;
     /* opacity: 0.25; */
     background: url(./Images/wool-plaid-white-bedsheet.jpg);
@@ -372,7 +371,7 @@ div.custCare i {
     }
     ul.navs {
         margin-right: 5px;
-        font-size: 13px;
+        font-size: 20px;
     }
     nav img.logo {
         width: 70px;
@@ -408,7 +407,7 @@ div.custCare i {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         font-size: 1rem;
         width: 100vw;
         background-color: maroon;
@@ -417,10 +416,10 @@ div.custCare i {
         left: -100%;
         transition: all 0.5s;
         top: 100px;
-        height: 60vh;
+        height: 100vh;
         width: 100%;
     }
-    div.mediaQueryCart{
+    div.mediaQueryCart {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -439,17 +438,33 @@ div.custCare i {
         justify-content: center;
     }
     i.fa-bars {
-        display:inline-block;
+        display: inline-block;
         z-index: 20;
         color: #FFF;
     }
-    div.logoAndtoogleButton{
+    div.logoAndtoogleButton {
         display: flex;
         justify-content: space-between;
         width: 100vw;
         padding: 15px;
     }
-    div.Sli_Cart{
+    div.Sli_Cart {
         display: none;
     }
-    /* Media Query for index Page End*/
+    .swiper-slide-active {
+        transform: scale(1);
+    }
+      div.swiper-slide img {
+          transform: scale(1.5);
+    }
+    div.textPro{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        
+    }
+    span{
+        width: 380px;
+    }
+}
+/* Media Query for index Page End*/
