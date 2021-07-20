@@ -113,7 +113,7 @@ div.carousel-inner div img {
 }
 
 div.bigSliderText {
-    width: 500px;
+    width: auto;
     padding: 40px;
     position: absolute;
     top: 250px;
@@ -210,12 +210,16 @@ h2.top_sell {
 
 div.top_images {
     width: 95vw;
-    height: 500px;
+    /* height: 500px; */
+    /* height:auto; */
     /* opacity: 0.25; */
     background: url(./Images/wool-plaid-white-bedsheet.jpg);
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    padding: 20px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 div.topImage {
@@ -231,6 +235,7 @@ div.topImage {
 /* Product Display Finish */
 
 /* PRoduct With Span Text Start */
+
 
 div.textPro {
     display: flex;
@@ -432,6 +437,7 @@ div.custCare i {
         border-bottom: solid 1px #fff;
         width: 700px;
         margin-right: 50px;
+        width: 100vw;
     }
     nav {
         display: flex;
@@ -454,17 +460,62 @@ div.custCare i {
     .swiper-slide-active {
         transform: scale(1);
     }
-      div.swiper-slide img {
-          transform: scale(1.5);
+    div.swiper-wrapper, div.swiper-slide {
+        height: 700px;
     }
-    div.textPro{
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        
+    div.swiper-container {
+        height: 700px;
+        padding-top: 10px;
     }
-    span{
+    div.swiper-slide img {
+        /* transform: scale(4); */
+        height: 600px;
+        width: 600px;
+    }
+    span {
         width: 380px;
     }
+    div.top_images {
+        height: 800px;
+    }
 }
+
+@media only screen and (max-width:425px) {
+    div.textPro {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+    div.top_images {
+        height: 1500px;
+    }
+    div.bigSliderText {
+        top: 150px;
+        left: 50px;
+    }
+    div.swiper-slide img {
+        height: 400px;
+        width: 400px;
+    }
+
+    div.swiper-slide{
+        width: 400px;
+    }
+    div.swiper-container{
+        height: 440px;
+    }
+    div.footer{
+        height: auto;
+    }
+}
+@media only screen and (max-width:375px) {
+    div.swiper-slide{
+        width: 350px;
+    }
+    div.swiper-slide img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
 /* Media Query for index Page End*/
